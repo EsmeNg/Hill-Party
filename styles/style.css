@@ -1,0 +1,253 @@
+body {
+  background: linear-gradient(110deg, #3b2929, #1b1515);
+  color: white;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: "Amatic SC", cursive;
+}
+
+.theme-image {
+  background-image: url("../telescope.jpg");
+  background: cover;
+  height: 70vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.theme-image .theme-text {
+  background-color: rgba(128, 128, 128, 0.5);
+  -webkit-box-shadow: 3px 3px 1px rgba(184, 167, 167, 0.5);
+          box-shadow: 3px 3px 1px rgba(184, 167, 167, 0.5);
+  color: white;
+  display: inline-block;
+  padding: 2rem 4rem;
+  margin-right: 5rem;
+  border-radius: 6px;
+  font-size: 2.5rem;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.theme-image .theme-text h1 {
+  font-size: 4.5rem;
+}
+
+.random-partner {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Fredericka the Great", cursive;
+  width: 70%;
+}
+
+.random-partner .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Amatic SC", cursive;
+}
+
+.random-partner .info .info-left img {
+  border-radius: 20px;
+}
+
+.random-partner .info .info-right p {
+  font-size: 1rem;
+}
+
+.random-partner .info .info-right button {
+  border: none;
+  pointer-events: none;
+  padding: 0rem 0.25rem;
+  margin-left: 0.25rem;
+}
+
+div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../modal_sky.jpg") center/cover;
+  opacity: 0.75;
+}
+
+div.card .header {
+  position: relative;
+}
+
+div.card .header img {
+  width: 120px;
+  margin-top: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+div.card .header img:hover {
+  -webkit-box-shadow: 0.35rem 0.45rem 0.2rem rgba(31, 32, 28, 0.644);
+          box-shadow: 0.35rem 0.45rem 0.2rem rgba(31, 32, 28, 0.644);
+}
+
+div.card .header i {
+  position: absolute;
+  top: 90%;
+  right: 20%;
+}
+
+div.card:hover {
+  opacity: 1;
+}
+
+i.gender-girl {
+  color: #ec87c6;
+  font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 #3d3c3c, 0 -1px black;
+}
+
+i.gender-boy {
+  color: #646bd3;
+  font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 #3d3c3c, 0 -1px black;
+}
+
+.card-body h5 {
+  margin: 0;
+}
+
+.card-body .btn-add-favorite {
+  margin: 0rem 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 0;
+  color: rgba(235, 247, 69, 0.95);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.05s ease;
+  transition: all 0.05s ease;
+}
+
+.card-body .btn-add-favorite:hover {
+  -webkit-transform: translateY(-8px) scale(1.25);
+          transform: translateY(-8px) scale(1.25);
+  color: #ffd700;
+  text-shadow: 1px 1px 3px #c5b358;
+}
+
+.card-body .btn-add-favorite:active {
+  -webkit-transform: translateY(-7px) scale(1.25);
+          transform: translateY(-7px) scale(1.25);
+}
+
+.card-body:hover {
+  -webkit-box-shadow: 10px 10px 5px rgba(60, 33, 92, 0.253);
+          box-shadow: 10px 10px 5px rgba(60, 33, 92, 0.253);
+}
+
+i {
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.nav {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.nav ul {
+  background-color: rgba(131, 125, 125, 0.3);
+  height: 7vw;
+  width: 13vw;
+  border-radius: 6px;
+  min-width: 105px;
+  min-height: 60px;
+  font-size: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  list-style-type: none;
+  text-align: end;
+  padding: 0rem 1rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 2.5vw;
+  color: white;
+}
+
+.nav ul li a:hover {
+  font-weight: bold;
+}
+
+.modal-content .modal-header {
+  background: #7676f5;
+}
+
+.modal-content .modal-body {
+  color: black;
+}
+
+#btn-random-user {
+  padding: 1rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #1c1f1c;
+  font-weight: bold;
+  background: linear-gradient(150deg, #FFBD1B, #e6d7a7, gold);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#btn-random-user:hover {
+  -webkit-box-shadow: 2px 2px 2px #c9ad66;
+          box-shadow: 2px 2px 2px #c9ad66;
+}
+
+.activePage {
+  color: white;
+  background-color: #654d7c;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

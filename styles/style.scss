@@ -1,0 +1,207 @@
+body {
+  background: linear-gradient(110deg, rgb(59, 41, 41), #1b1515);
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "Amatic SC", cursive;
+}
+
+.theme-image {
+  background-image: url("../telescope.jpg");
+  background: cover;
+  height: 70vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  .theme-text {
+    background-color: rgba(128, 128, 128, 0.5);
+    box-shadow: 3px 3px 1px rgba(184, 167, 167, 0.5);
+    color: white;
+    display: inline-block;
+    padding: 2rem 4rem;
+    margin-right: 5rem;
+    border-radius: 6px;
+    font-size: 2.5rem;
+    font-family: "Fredericka the Great", cursive;
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+.random-partner {
+  margin-top: 1rem;
+  //background-color: rgba(128, 128, 128, 0.5);
+  //border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fredericka the Great", cursive;
+  width: 70%;
+  .info {
+    display: flex;
+    font-family: "Amatic SC", cursive;
+    .info-left {
+      img {
+        border-radius: 20px;
+      }
+    }
+    .info-right {
+      p {
+        font-size: 1rem;
+      }
+      button {
+        border: none;
+        pointer-events: none;
+        padding: 0rem 0.25rem;
+        margin-left: 0.25rem;
+      }
+    }
+  }
+}
+
+div.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../modal_sky.jpg") center / cover;
+  opacity: 0.75;
+  .header {
+    position: relative;
+    img {
+      width: 120px;
+      margin-top: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.2s ease;
+      &:hover {
+        box-shadow: 0.35rem 0.45rem 0.2rem rgba(31, 32, 28, 0.644);
+      }
+    }
+
+    i {
+      position: absolute;
+      top: 90%;
+      right: 20%;
+    }
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+i.gender-girl {
+  color: rgb(236, 135, 198);
+  font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 rgb(61, 60, 60),
+    0 -1px black;
+}
+
+i.gender-boy {
+  color: rgb(100, 107, 211);
+  font-size: 1.5rem;
+  text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 rgb(61, 60, 60),
+    0 -1px black;
+}
+
+.card-body {
+  h5 {
+    margin: 0;
+  }
+  .btn-add-favorite {
+    margin: 0rem 0.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 0;
+    color: hsla(64, 92%, 62%, 0.95);
+    transform: translateY(-5px);
+    transition: all 0.05s ease;
+    &:hover {
+      transform: translateY(-8px) scale(1.25);
+      color: #ffd700;
+      text-shadow: 1px 1px 3px #c5b358;
+    }
+    &:active {
+      transform: translateY(-7px) scale(1.25);
+    }
+  }
+  &:hover {
+    box-shadow: 10px 10px 5px rgba(60, 33, 92, 0.253);
+  }
+}
+
+i {
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.nav {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  ul {
+    background-color: rgba(131, 125, 125, 0.3);
+    height: 7vw;
+    width: 13vw;
+    border-radius: 6px;
+    min-width: 105px;
+    min-height: 60px;
+    font-size: 0px;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style-type: none;
+      text-align: end;
+      padding: 0rem 1rem;
+      a {
+        text-decoration: none;
+        font-size: 2.5vw;
+        color: white;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.modal-content {
+  .modal-header {
+    background: rgb(118, 118, 245);
+  }
+  .modal-body {
+    color: black;
+  }
+}
+
+#btn-random-user {
+  padding: 1rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  border-radius: 6px;
+  color: rgb(28, 31, 28);
+  font-weight: bold;
+  background: linear-gradient(150deg, #FFBD1B, #e6d7a7, gold);
+  transition: all 0.5s ease;
+  &:hover{
+    box-shadow: 2px 2px 2px rgb(201, 173, 102);
+  }
+}
+
+.activePage {
+  color:white;
+  background-color: rgb(101, 77, 124);
+  font-weight: bold;
+}
